@@ -7,140 +7,204 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header class="site-header" role="banner">
-    <div class="wrapper">
-      <h1 class="logo"><a href="index.html">TU Dublin – Campus Life Companion</a></h1>
-      <p class="subtitle">Grangegorman • Bolton St • Tallaght • Blanchardstown</p>
-    </div>
-  </header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <nav class="main-nav" aria-label="Main navigation">
-    <div class="wrapper">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="timetable.html">Timetable</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main id="main-content" class="main-content" role="main">
-    <div class="wrapper">
-      <div class="content-with-sidebar">
-        <article>
-          <section aria-labelledby="welcome-heading">
-            <h2 id="welcome-heading">Welcome</h2>
-            <p>Get started by entering your details. We collect your name, student ID, email, course, and year to personalise your experience. You can control location sharing and AI recommendations in your profile.</p>
-            <p><a href="profile.html#privacy">Read our privacy notice</a></p>
-          </section>
-
-          <section aria-labelledby="form-heading">
-            <form id="signup" aria-labelledby="form-heading">
-              <h3 id="form-heading">Create your account</h3>
-              <div class="form-group">
-                <input type="text" id="name" name="name" required autocomplete="name">
-              </div>
-              <div class="form-group">
-                <input type="text" id="sid" name="sid" required autocomplete="username">
-              </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" required autocomplete="email">
-              </div>
-              <div class="form-group">
-                <input type="text" id="course" name="course">
-              </div>
-              <div class="form-group">
-                <select id="year" name="year">
-                  <option value="">Select year</option>
-                  <option value="1">Year 1</option>
-                  <option value="2">Year 2</option>
-                  <option value="3">Year 3</option>
-                  <option value="4">Year 4</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" name="location" id="location">
-                <span>Share location for personalised campus recommendations (optional)</span>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" name="ai" id="ai">
-                <span>Enable AI recommendations based on my course and interests</span>
-              </div>
-              <button type="submit">Create account</button>
-            </form>
-          </section>
-
-          <section aria-labelledby="timetable-heading">
-            <h2 id="timetable-heading">Quick glance – Your timetable</h2>
-            <table>
-              <caption>This week's classes</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Time</th>
-                  <th scope="col">Mon</th>
-                  <th scope="col">Tue</th>
-                  <th scope="col">Wed</th>
-                  <th scope="col">Thu</th>
-                  <th scope="col">Fri</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">9:00</th>
-                  <td>CS101</td>
-                  <td><span aria-hidden="true">–</span></td>
-                  <td>CS101</td>
-                  <td><span aria-hidden="true">–</span></td>
-                  <td>CS101</td>
-                </tr>
-                <tr>
-                  <th scope="row">11:00</th>
-                  <td><span aria-hidden="true">–</span></td>
-                  <td>MATH</td>
-                  <td><span aria-hidden="true">–</span></td>
-                  <td>MATH</td>
-                  <td><span aria-hidden="true">–</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <p><a href="timetable.html">View full timetable</a></p>
-          </section>
-
-          <section class="recommendations" aria-labelledby="rec-heading">
-            <h3 id="rec-heading">Recommended for you</h3>
-            <p>Based on your interests, we recommend: <a href="events.html">Coding Society Meetup</a>, <a href="events.html">Wellbeing Workshop</a>, and <a href="events.html">Library Orientation</a>.</p>
-          </section>
-        </article>
-
-        <aside class="sidebar" aria-labelledby="quicklinks-heading">
-          <h3 id="quicklinks-heading">Quick links</h3>
-          <ul>
-            <li>Your timetable</li>
-            <li>Events & societies</li>
-            <li>Profile & settings</li>
-            <li>Student support</li>
-            <li>Library</li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="wrapper">
-      <p>© 2025 TU Dublin. <a href="#">Privacy policy</a> · <a href="#">Accessibility</a></p>
-    </div>
-  </footer>
-
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies to improve your experience. By continuing you agree to our <a href="#">cookie policy</a>.</p>
-    <button type="button" data-cookie-accept>Accept</button>
+<header class="site-header">
+  <div class="wrapper">
+    <h1 class="logo">
+      <a href="index.html">TU Dublin – Campus Life Companion</a>
+    </h1>
+    <p class="subtitle">Grangegorman • Bolton St • Tallaght • Blanchardstown</p>
   </div>
+</header>
 
-  <script src="app.js"></script>
+<nav class="main-nav" aria-label="Main navigation">
+  <div class="wrapper">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main-content" class="main-content" tabindex="-1">
+  <div class="wrapper">
+    <div class="content-with-sidebar">
+
+      <article>
+
+        <!-- Welcome -->
+        <section aria-labelledby="welcome-heading">
+          <h2 id="welcome-heading">Welcome</h2>
+          <p>
+            Get started by entering your details. We collect your name, student ID,
+            email, course, and year to personalise your experience.
+          </p>
+          <p>
+            <a href="profile.html#privacy">Read our privacy notice</a>
+          </p>
+        </section>
+
+        <!-- Signup Form -->
+        <section aria-labelledby="form-heading">
+          <h2 id="form-heading">Create your account</h2>
+
+          <form id="signup">
+
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="sid">Student ID</label>
+              <input type="text" id="sid" name="sid" required autocomplete="username">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="course">Course</label>
+              <input type="text" id="course" name="course">
+            </div>
+
+            <div class="form-group">
+              <label for="year">Year of study</label>
+              <select id="year" name="year">
+                <option value="">Select year</option>
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="location" id="location">
+                Share location for personalised campus recommendations (optional)
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="ai" id="ai">
+                Enable AI recommendations based on my course and interests
+              </label>
+            </div>
+
+            <button type="submit">Create account</button>
+
+            <p id="form-status" role="status" aria-live="polite"></p>
+
+          </form>
+        </section>
+
+        <!-- Timetable Preview -->
+        <section aria-labelledby="timetable-heading">
+          <h2 id="timetable-heading">Quick glance – Your timetable</h2>
+
+          <table>
+            <caption>This week's classes</caption>
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Mon</th>
+                <th scope="col">Tue</th>
+                <th scope="col">Wed</th>
+                <th scope="col">Thu</th>
+                <th scope="col">Fri</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">9:00</th>
+                <td>CS101</td>
+                <td>No class</td>
+                <td>CS101</td>
+                <td>No class</td>
+                <td>CS101</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00</th>
+                <td>No class</td>
+                <td>MATH</td>
+                <td>No class</td>
+                <td>MATH</td>
+                <td>No class</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><a href="timetable.html">View full timetable</a></p>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="recommendations" aria-labelledby="rec-heading">
+          <h3 id="rec-heading">Recommended for you</h3>
+          <p>
+            Based on your interests, we recommend:
+            <a href="events.html">Coding Society Meetup</a>,
+            <a href="events.html">Wellbeing Workshop</a>,
+            <a href="events.html">Library Orientation</a>.
+          </p>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-labelledby="quicklinks-heading">
+        <h3 id="quicklinks-heading">Quick links</h3>
+        <ul>
+          <li><a href="timetable.html">Your timetable</a></li>
+          <li><a href="events.html">Events & societies</a></li>
+          <li><a href="profile.html">Profile & settings</a></li>
+          <li><a href="#">Student support</a></li>
+          <li><a href="#">Library</a></li>
+        </ul>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>
+      © 2025 TU Dublin.
+      <a href="#">Privacy policy</a> ·
+      <a href="#">Accessibility</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Accessible Cookie Banner -->
+<div id="cookie-banner"
+     class="cookie-banner"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="cookie-title"
+     aria-describedby="cookie-desc">
+
+  <h2 id="cookie-title">Cookie consent</h2>
+  <p id="cookie-desc">
+    We use cookies to improve your experience.
+    See our <a href="#">cookie policy</a>.
+  </p>
+
+  <button type="button" data-cookie-accept>Accept</button>
+  <button type="button" data-cookie-reject>Reject</button>
+
+</div>
+
+<script src="app.js"></script>
+
 </body>
 </html>

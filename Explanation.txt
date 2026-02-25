@@ -1,0 +1,9 @@
+For this lab, I checked the site for accessibility issues and fixed a few important ones.
+ First, some form fields didn’t have proper labels, which makes it hard for screen reader users to understand what each input is for.
+I added correct labels so all fields are clearly identified and easier to use.
+
+ Second, the skip-to-content link didn’t work properly for keyboard users because the main section couldn’t receive focus. I fixed this by making the main area focusable, so users can skip navigation and go straight to the content.
+
+I also improved the timetable by replacing hidden symbols with text like “No class,” so screen readers can read it correctly.
+
+These changes make the site easier to navigate, more accessible, and more user-friendly overall.

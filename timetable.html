@@ -1,150 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Timetable – Campus Life Companion</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<main id="main-content" tabindex="-1" class="main-content">
 
-  <header class="site-header" role="banner">
-    <div class="wrapper">
-      <h1 class="logo"><a href="index.html">TU Dublin – Campus Life Companion</a></h1>
-      <p class="subtitle">Grangegorman • Bolton St • Tallaght • Blanchardstown</p>
-    </div>
-  </header>
+<h2>Your Timetable</h2>
 
-  <nav class="main-nav" aria-label="Main navigation">
-    <div class="wrapper">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timetable.html" aria-current="page">Timetable</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </div>
-  </nav>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+</tr>
+</thead>
 
-  <main id="main-content" class="main-content" role="main">
-    <div class="wrapper">
-      <div class="content-with-sidebar">
-        <article>
-          <header>
-            <h2>Your Timetable</h2>
-            <p><strong>Aoife Murphy</strong> · Student ID: D00123456 · BSc Computer Science (Year 2)</p>
-          </header>
+<tbody>
+<tr>
+<th>9:00</th>
+<td>Programming</td>
+<td>No class</td>
+<td>Programming</td>
+<td>No class</td>
+<td>Programming</td>
+</tr>
 
-          <section aria-labelledby="schedule-heading">
-            <h3 id="schedule-heading">Week 12 – Semester 2</h3>
-            <div class="table-scroll">
-              <table>
-                <caption>Weekly class schedule</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Time</th>
-                    <th scope="col">Monday</th>
-                    <th scope="col">Tuesday</th>
-                    <th scope="col">Wednesday</th>
-                    <th scope="col">Thursday</th>
-                    <th scope="col">Friday</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">9:00</th>
-                    <td>CS201 Programming<br><small>Grangegorman East Quad, Room 2.12</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>CS201 Programming<br><small>Grangegorman East Quad, Room 2.12</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>CS201 Programming<br><small>Grangegorman East Quad, Room 2.12</small></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">10:00</th>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>MATH204 Stats<br><small>Bolton St, Room 301</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>MATH204 Stats<br><small>Bolton St, Room 301</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">11:00</th>
-                    <td>CS202 Web Dev<br><small>Grangegorman, Lab 4.05</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>CS202 Web Dev<br><small>Grangegorman, Lab 4.05</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td><span aria-hidden="true">–</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">12:00</th>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>CS203 Databases<br><small>Tallaght Campus, Room A2.14</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>CS203 Databases<br><small>Tallaght Campus, Room A2.14</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">14:00</th>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td>SOFT201 Group Project<br><small>Blanchardstown, Room B101</small></td>
-                    <td><span aria-hidden="true">–</span></td>
-                    <td><span aria-hidden="true">–</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+<tr>
+<th>10:00</th>
+<td>No class</td>
+<td>Stats</td>
+<td>No class</td>
+<td>Stats</td>
+<td>No class</td>
+</tr>
 
-          <section aria-labelledby="locations-heading">
-            <h3 id="locations-heading">Campus locations</h3>
-            <ul class="list-unstyled">
-              <li class="card">
-                <strong>Grangegorman</strong><br>
-                <address>7–9 Grangegorman Lower, Dublin 7</address>
-              </li>
-              <li class="card">
-                <strong>Bolton Street</strong><br>
-                <address>Bolton St, Dublin 1</address>
-              </li>
-              <li class="card">
-                <strong>Tallaght</strong><br>
-                <address>Old Blessington Rd, Tallaght, Dublin 24</address>
-              </li>
-              <li class="card">
-                <strong>Blanchardstown</strong><br>
-                <address>Blanchardstown Rd North, Dublin 15</address>
-              </li>
-            </ul>
-          </section>
-        </article>
+<tr>
+<th>11:00</th>
+<td>Web Dev</td>
+<td>No class</td>
+<td>Web Dev</td>
+<td>No class</td>
+<td>No class</td>
+</tr>
 
-        <aside class="sidebar" aria-labelledby="sidebar-heading">
-          <h3 id="sidebar-heading">Quick links</h3>
-          <ul>
-            <li>Home</li>
-            <li>Events</li>
-            <li>Profile</li>
-            <li>Campus maps</li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </main>
+</tbody>
+</table>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="wrapper">
-      <p>© 2025 TU Dublin. <a href="index.html">Back to home</a> · <a href="#">Privacy policy</a></p>
-    </div>
-  </footer>
+<aside>
+<h3>Quick links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="#">Campus maps</a></li>
+</ul>
+</aside>
 
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies to improve your experience. <a href="#">Cookie policy</a></p>
-    <button type="button" data-cookie-accept>Accept</button>
-  </div>
-
-  <script src="app.js"></script>
-</body>
-</html>
+</main>

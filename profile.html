@@ -1,149 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profile – Campus Life Companion</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<main id="main-content" tabindex="-1">
 
-  <header class="site-header" role="banner">
-    <div class="wrapper">
-      <h1 class="logo"><a href="index.html">TU Dublin – Campus Life Companion</a></h1>
-      <p class="subtitle">Grangegorman • Bolton St • Tallaght • Blanchardstown</p>
-    </div>
-  </header>
+<h2>Your profile</h2>
 
-  <nav class="main-nav" aria-label="Main navigation">
-    <div class="wrapper">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timetable.html">Timetable</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="profile.html" aria-current="page">Profile</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </div>
-  </nav>
+<form>
 
-  <main id="main-content" class="main-content" role="main">
-    <div class="wrapper">
-      <div class="content-with-sidebar">
-        <article>
-          <header>
-            <h2>Your profile</h2>
-          </header>
+<label class="checkbox-label">
+<input type="checkbox" name="location">
+Share location for personalised campus recommendations
+</label>
 
-          <section aria-labelledby="details-heading">
-            <h3 id="details-heading">Personal details</h3>
-            <dl>
-              <dt>Name</dt>
-              <dd>Aoife Murphy</dd>
-              <dt>Student ID</dt>
-              <dd>D00123456</dd>
-              <dt>Email</dt>
-              <dd><a href="mailto:aoife.murphy@mytudublin.ie">aoife.murphy@mytudublin.ie</a></dd>
-              <dt>Course</dt>
-              <dd>BSc (Hons) Computer Science</dd>
-              <dt>Year</dt>
-              <dd>2</dd>
-              <dt>Home campus</dt>
-              <dd>Grangegorman</dd>
-            </dl>
-          </section>
+<label class="checkbox-label">
+<input type="checkbox" name="ai" checked>
+Enable AI recommendations based on my course and interests
+</label>
 
-          <section aria-labelledby="registration-heading">
-            <h3 id="registration-heading">Registration status</h3>
-            <ul class="list-unstyled">
-              <li class="card">Semester 2 2024/25 – Registered ✓</li>
-              <li class="card">Fees – Paid ✓</li>
-            </ul>
-          </section>
+<button type="submit">Save preferences</button>
 
-          <section aria-labelledby="participation-heading">
-            <h3 id="participation-heading">Event participation</h3>
-            <table>
-              <caption>Events you have attended</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Event</th>
-                  <th scope="col">Date</th>
-                  <th scope="col">Attended</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Coding Society Meetup</td>
-                  <td><time datetime="2025-02-12">12 Feb 2025</time></td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Library Orientation</td>
-                  <td><time datetime="2025-01-31">31 Jan 2025</time></td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Wellbeing Workshop</td>
-                  <td><time datetime="2025-01-23">23 Jan 2025</time></td>
-                  <td>No</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+</form>
 
-          <section id="privacy" aria-labelledby="privacy-heading">
-            <h3 id="privacy-heading">Privacy & data settings</h3>
-            <form>
-              <div class="form-group">
-                <input type="checkbox" name="location" id="location">
-                <span>Share location for personalised campus recommendations</span>
-              </div>
-              <div class="form-group">
-                <input type="checkbox" name="ai" id="ai" checked>
-                <span>Enable AI recommendations based on my course and interests</span>
-              </div>
-              <button type="button">Save preferences</button>
-            </form>
-          </section>
+<form>
 
-          <section aria-labelledby="contact-heading">
-            <h3 id="contact-heading">Edit contact details</h3>
-            <form>
-              <div class="form-group">
-                <input type="email" id="email-edit" value="aoife.murphy@mytudublin.ie">
-              </div>
-              <div class="form-group">
-                <input type="tel" id="phone">
-              </div>
-              <button type="button">Save changes</button>
-            </form>
-          </section>
+<label for="email-edit">Email</label>
+<input type="email" id="email-edit" name="email" autocomplete="email">
 
-          <p><a href="#">View full privacy notice</a></p>
-        </article>
+<label for="phone">Phone number</label>
+<input type="tel" id="phone" name="phone" autocomplete="tel">
 
-        <aside class="sidebar" aria-labelledby="data-heading">
-          <h3 id="data-heading">Your data</h3>
-          <p>We store: name, student ID, email, course, year, timetable, event participation. Location and AI preferences are optional.</p>
-          <p><a href="#">Privacy policy</a></p>
-        </aside>
-      </div>
-    </div>
-  </main>
+<button type="submit">Save changes</button>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="wrapper">
-      <p>© 2025 TU Dublin. <a href="index.html">Back to home</a> · <a href="#">Privacy policy</a></p>
-    </div>
-  </footer>
+</form>
 
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
-    <p>We use cookies to improve your experience. <a href="#">Cookie policy</a></p>
-    <button type="button" data-cookie-accept>Accept</button>
-  </div>
+<p id="form-status" role="status" aria-live="polite"></p>
 
-  <script src="app.js"></script>
-</body>
-</html>
+</main>

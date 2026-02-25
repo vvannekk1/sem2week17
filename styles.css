@@ -252,3 +252,27 @@ address { font-style: normal; }
   padding: 1.25rem;
   margin-top: 2rem;
 }
+
+:focus-visible{
+outline:3px solid #000;
+outline-offset:3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto;}
+}
+
+.main-nav a[aria-current="page"]{
+background:white;
+font-weight:700;
+text-decoration:underline;
+}
+
+.sr-only{
+position:absolute;
+width:1px;
+height:1px;
+overflow:hidden;
+clip:rect(0,0,0,0);
+}
+
